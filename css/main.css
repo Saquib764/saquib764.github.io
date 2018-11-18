@@ -156,6 +156,7 @@ div.landing div.landing-holder>div.skill {
 	position: fixed;
 	bottom: 0;
 	text-align: left;
+	width: 100%;
 }
 
 div.landing a.know{
