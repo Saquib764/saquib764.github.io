@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+div.border{
+	height: 5px;
+	width: 100%;
+	background-color: #af0000;
+	position: fixed;
+	top: 0px;
+}
+
+div.social{
+	position: fixed;
+	bottom: 5vh;
+	left: 5vw;
+}
+
+div.social .fab {
+	width: 30px;
+	font-size: 30px;
+	margin-right: 4px;
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.8;
+	/*background: white;*/
+	color: white;
+	padding: 3px 5px;
+}
+div.social .fab:hover{
+	opacity: 1;
+}
+
+div.landing{
+	width: 100%;
+	height: 100vh;
+	font-family: 'Josefin Sans', sans-serif;
+}
+div.landing::before{
+	content: " ";
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url("../images/landing_laptop.jpg");
+	filter: grayscale(0.9);
+	background-size: cover;
+}
+div.landing>div.contain-all{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+}
+
+div.landing div.landing-holder{
+	/*border-top: 5px solid #af0000;*/
+	padding-top: 40vh;
+	padding-left: 5%;
+	text-align: left;
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+div.landing div.landing-holder>div.info {
+	border-left: 5px solid;
+	padding-bottom: 25px;
+}
+div.landing div.landing-holder span{
+	display: block;
+	padding: 10px;
+}
+div.landing div.landing-holder span.name{
+	font-weight: bold;
+	font-size: 70px;
+}
+
+div.landing div.landing-holder span.skill{
+	color: rgb(0,0,0, 0.8);
+	background: white;
+	width: fit-content;
+}
+
+div.landing a.know{
+	border-left: 3px solid;
+	text-decoration: none;
+	margin-top: 40px;
+	display: inline-block;
+	color: white;
+	background-color: black;
+	padding: 15px;
+	line-height: 30px;
+	position: relative;
+}
+div.landing a.know::after{
+	content: " ";
+	width: 0;
+	height: 0;
+	left: 100%;
+	top: 0;
+	position: absolute;
+	border-left: 0px solid black;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	transition: border-left 0.2s;
+}
+div.landing a.know:hover::after{
+	border-left: 30px solid black;
+}
+div.landing a.know>span{
+	display: inline-block;
+}
+
+.mobile-only{
+	display: none !important;
+}
+
+/* MOBILE CSS */
+@media only screen and (max-width: 600px) {
+
+.mobile-only{
+	display: inherit;
+}
+
+div.landing::before{
+	background-image: url("../images/landing_mobile.jpg");
+}
+
+div.landing div.landing-holder{
+	/*border-top: 5px solid #af0000;*/
+	padding-top: 50vh;
+	width: 100%;
+	padding-left: 0;
+	text-align: center;
+	font-size: 14px;
+}
+div.landing div.landing-holder>div.info {
+	border-left: none;
+	padding-bottom: 5px;
+}
+div.landing div.landing-holder span.name{
+	font-size: 30px;
+	padding-top: 0;
+}
+div.social{
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 5px;
+}
+
+div.landing div.landing-holder>div.skill {
+	background: white;
+	position: fixed;
+	bottom: 0;
+	text-align: left;
+}
+
+div.landing a.know{
+	margin-top: 20px;
+	display: inline-block;
+	color: white;
+	background-color: black;
+	padding: 5px;
+	line-height: normal;
+	position: relative;
+}
+div.landing a.know span{
+	display: inline-block !important;
+	padding: 0;
+}
+
+}
