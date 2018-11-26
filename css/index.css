@@ -160,6 +160,9 @@ div.landing div.landing-holder>div.skill {
 	width: 100%;
 }
 
+div.landing a.know::after{
+	display: none;
+}
 div.landing a.know{
 	margin-top: 20px;
 	display: inline-block;
