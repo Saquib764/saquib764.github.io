@@ -149,6 +149,7 @@ div.social{
 	text-align: center;
 	left: 0;
 	top: 5px;
+	bottom: unset;
 }
 
 div.landing div.landing-holder>div.skill {
