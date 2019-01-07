@@ -3,6 +3,36 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Josefin Sans', sans-serif;
+	background: rgba(20,10,10,1);
+	color: white;
+	padding-bottom: 150px;
+}
+div.container{
+	width: 100%;
+	padding-top: 20vh;
+}
+
+div.menu{
+	position: fixed;
+	top: 5px;
+	left: 5%;
+	z-index: 10;
+	padding-bottom: 60px;
+}
+div.menu.shadow-black{
+	background-image: linear-gradient(rgba(20,10,10,1), rgba(20,10,10,1), rgba(0,0,0,0));
+}
+div.menu>span{
+	padding: 10px 20px;
+	background: rgba(255,255,255, 0.1);
+	margin-right: 5px;
+	transition: 0.5s padding-top;
+	float: left;
+	display: inline-block;
+}
+div.menu>span:hover{
+	padding-top: 20px;
+	cursor: pointer;
 }
 
 div.border{
@@ -11,12 +41,14 @@ div.border{
 	background-color: #af0000;
 	position: fixed;
 	top: 0px;
+	z-index: 10;
 }
 
 div.social{
-	position: fixed;
-	bottom: 5vh;
+	position: absolute;
+	bottom: 10vh;
 	left: 5vw;
+	z-index: 10;
 }
 
 div.social .fab {
@@ -48,6 +80,15 @@ div.landing::before{
 	filter: grayscale(0.9);
 	background-size: cover;
 }
+div.landing::after{
+	content: " ";
+	width: 100%;
+	height: 25vh;
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(20,10,10,1));
+}
 div.landing>div.contain-all{
 	position: relative;
 	width: 100%;
@@ -57,7 +98,7 @@ div.landing>div.contain-all{
 
 div.landing div.landing-holder{
 	/*border-top: 5px solid #af0000;*/
-	padding-top: 40vh;
+	padding-top: 35vh;
 	padding-left: 5%;
 	text-align: left;
 	color: white;
@@ -66,7 +107,7 @@ div.landing div.landing-holder{
 }
 div.landing div.landing-holder>div.info {
 	border-left: 5px solid;
-	padding-bottom: 25px;
+	padding-bottom: 0px;
 }
 div.landing div.landing-holder span{
 	display: block;
@@ -117,6 +158,58 @@ div.landing a.know>span{
 	display: none !important;
 }
 
+
+
+div#about>div{
+	margin: auto;
+	width: 70vw;
+	min-width: 600px;
+	position: relative;
+	display: flex;
+}
+
+div#about div.item{
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	color: rgba(255,255,255, 0.5);
+	/*float: left;*/
+}
+div#about div.item>div{
+	margin: 10px;
+	padding: 50px;
+	align-items: center;
+	text-align: center;
+	line-height: 1.5em;
+}
+div#about div.item img{
+	width: 200px;
+	border-radius: 120px;
+	opacity: 0.9;
+}
+div#about div.item a{
+	color: rgba(255,255,255,0.7);
+	font-weight: bold;
+}
+
+
+
+
+
+
+div#photography{
+	background: white;
+	color: rgb(20,20,20);
+	padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
 /* MOBILE CSS */
 @media only screen and (orientation: portrait) {
 
@@ -126,6 +219,17 @@ div.landing a.know>span{
 
 div.landing::before{
 	background-image: url("../images/landing_mobile.jpg");
+}
+div.menu{
+	left: unset;
+	width: 100%;
+	text-align: center;
+}
+div.menu>span{
+	float: unset;
+}
+div.menu>span:hover{
+	padding-top: 10px;
 }
 
 div.landing div.landing-holder{
@@ -148,8 +252,7 @@ div.social{
 	width: 100%;
 	text-align: center;
 	left: 0;
-	top: 5px;
-	bottom: unset;
+	bottom: 5vh;
 }
 
 div.landing div.landing-holder>div.skill {
@@ -176,5 +279,21 @@ div.landing a.know span{
 	display: inline-block !important;
 	padding: 0;
 }
+
+
+
+div#about>div{
+	width: 100%;
+	min-width: unset;
+	display: table;
+}
+div#about div.item{
+	width: 100%;
+}
+
+div#about div.item>div{
+	padding: 20px;
+}
+
 
 }
