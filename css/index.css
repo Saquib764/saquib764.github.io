@@ -22,15 +22,17 @@ div.menu{
 div.menu.shadow-black{
 	background-image: linear-gradient(rgba(20,10,10,1), rgba(20,10,10,1), rgba(0,0,0,0));
 }
-div.menu>span{
+div.menu>span, div.menu>a{
+	text-decoration: none;
 	padding: 10px 20px;
 	background: rgba(255,255,255, 0.1);
 	margin-right: 5px;
 	transition: 0.5s padding-top;
 	float: left;
 	display: inline-block;
+	color: inherit;
 }
-div.menu>span:hover{
+div.menu>span:hover, div.menu>a:hover{
 	padding-top: 20px;
 	cursor: pointer;
 }
@@ -166,6 +168,11 @@ div#about>div{
 	min-width: 600px;
 	position: relative;
 	display: flex;
+}
+
+div#about .title{
+	text-align: center;
+	font-size: 3.5em;
 }
 
 div#about div.item{
