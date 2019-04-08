@@ -7,10 +7,11 @@ class App{
 	
 	init() {
 		console.log("Init")
-		this.attachListeners()
 		this.state = {
-			lightbox: false
+			lightbox: false,
+			mobile: false
 		}
+		this.attachListeners()
 	}
 
 	attachListeners(){
@@ -18,6 +19,8 @@ class App{
 		document.onkeyup = this.onKey.bind(this)
 		$("div#photography>div.thumb").onclick = this.showlightbox.bind(this)
 		$("div#photography>div.lightbox").onclick = this.hidelightbox.bind(this)
+
+		this.state.mobile = window.getComputedStyle($("div#mobile")).getPropertyValue("opacity") == "1"
 	}
 	hidelightbox(e){
 		this.state.lightbox = false
@@ -25,6 +28,8 @@ class App{
 		$("div#photography>div.lightbox").style.display = "none"
 	}
 	showlightbox(e){
+		if(this.state.mobile)
+			return 0
 		this.state.lightbox = true
 		$("div#photography>div.lightbox img").src = e.target.src
 		$("div#photography>div.lightbox").style.display = "block"

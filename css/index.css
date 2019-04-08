@@ -244,11 +244,17 @@ div#photography div.lightbox img{
 
 
 
-
+div#mobile{
+	display: none;
+	opacity: 0;
+}
 
 
 /* MOBILE CSS */
 @media only screen and (orientation: portrait) {
+div#mobile{
+	opacity: 1;
+}
 
 .mobile-only{
 	display: inherit;
@@ -336,7 +342,7 @@ div#photography>div.thumb{
 	width: 90%;
 }
 
-div#photography img{
+div#photography>div.thumb img{
 	width: 100%;
 }
 
