@@ -170,7 +170,7 @@ div#about>div{
 	display: flex;
 }
 
-div#about .title{
+div .title{
 	text-align: center;
 	font-size: 3.5em;
 }
@@ -205,12 +205,42 @@ div#about div.item a{
 
 
 div#photography{
-	background: white;
-	color: rgb(20,20,20);
+	background: black;
+	color: white;
 	padding-bottom: 50px;
+	padding-top: 10vh;
+}
+
+div#photography>div.thumb{
+	width: 70%;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+div#photography>div.lightbox{
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	position: fixed;
+	background: rgba(255,255,255, 0.9);
+	z-index: 100;
+}
+
+div#photography div.thumb img{
+	width: 32%;
+	margin-bottom: 20px;
 }
 
 
+div#photography div.lightbox img{
+	height: 80vh;
+	margin: auto;
+	display: block;
+	margin-top: 10vh;
+}
 
 
 
@@ -300,6 +330,18 @@ div#about div.item{
 
 div#about div.item>div{
 	padding: 20px;
+}
+
+div#photography>div.thumb{
+	width: 90%;
+}
+
+div#photography img{
+	width: 100%;
+}
+
+div#photography>div.lightbox{
+	display: none;
 }
 
 

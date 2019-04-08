@@ -8,15 +8,43 @@ class App{
 	init() {
 		console.log("Init")
 		this.attachListeners()
+		this.state = {
+			lightbox: false
+		}
 	}
 
 	attachListeners(){
 		document.onscroll = this.onScroll.bind(this)
+		document.onkeyup = this.onKey.bind(this)
+		$("div#photography>div.thumb").onclick = this.showlightbox.bind(this)
+		$("div#photography>div.lightbox").onclick = this.hidelightbox.bind(this)
+	}
+	hidelightbox(e){
+		this.state.lightbox = false
+		$("div#photography>div.lightbox img").src = ""
+		$("div#photography>div.lightbox").style.display = "none"
+	}
+	showlightbox(e){
+		this.state.lightbox = true
+		$("div#photography>div.lightbox img").src = e.target.src
+		$("div#photography>div.lightbox").style.display = "block"
+	}
+
+	onKey(e){
+		if(this.state.lightbox){
+			switch(e.code){
+				case "Escape":
+				case "Space": this.hidelightbox()
+			}
+			e.preventDefault();
+			return false
+		}
+		
 	}
 
 	onScroll(e){
 		let currScroll = window.pageYOffset;
-		if(currScroll > $("div#about").offsetTop){
+		if($("div#photography").offsetTop - 100 > currScroll && currScroll > $("div#about").offsetTop){
 			$('div.menu').classList.add("shadow-black")
 		}else{
 			$('div.menu').classList.remove("shadow-black")

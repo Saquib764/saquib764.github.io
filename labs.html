@@ -7,15 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 	<title>Labs Saquib Alam</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 	<link rel="stylesheet" href="css/knowme.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="css/labs.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
 </head>
 
 <body>
-	<div class="container">
-		Coming soon
+	<div class="container1">
+		<h1 style="text-align: center; margin-top: 50px;">Oye Lab</h1>
+		<h3 style="text-align: center;">Autonomous System | Python | JavaScript</h3>
+		<br/>
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Apr</span>
+				<span class="day">08</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>Autonomous drone</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>Crazyflie</span>
+				<span>ROS</span>
+				<span>OpenCV</span>
+				<span>Machine Learning</span>
+				<span>Aruco</span>
+				<span>Perception</span>
+				<span>Localisation</span>
+				<span>Planning</span>
+			</div>
+			<p>This is a six month long course project, done in group of three. Aim is build an autnomous drone capable of planning and executing a path in known map. Path need to satisfy certain constraints. Localisation of drone is done using Aruco markers, whose position is known. Drone should be also to able to find known object and report it's position in map. SVM is used to detect and localise object in the image which is then converted to world frame usin camera geometry.</p>
+			<p>Below video demonstrate localisation capability of drone. Drone is capable of flying from any position from map, given there is an Aruco marker near-by.  The path being executed is pre-planned. More videos comming soon. </p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JBJQxv_AkvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Apr</span>
+				<span class="day">05</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>Flying Crazyflie drone over The Internet using Smartphone's motion sensor</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>Crazyflie</span>
+				<span>ROS</span>
+				<span>JavaScript</span>
+				<span>WebRTC</span>
+			</div>
+			<p>Orientation of smartphone is continuously relayed over internet via a socket connection to the host computer. The host computer hosts a python server and ROS server. Python server receives commands from the user and commands the drone via ROS server. A video calling service is used to broadcast video feed to remote user. Here in video, my friend controls drone over Appear.in call.</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3TlEUlyPReI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Mar</span>
+				<span class="day">01</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>The invisibility Cloak</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>OpenCV</span>
+				<span>Magic</span>
+			</div>
+			<p>Usual chroma key effect is easy to implement in python. In this project, however, I used subject's cloth edge and shadow to produce lense like distortion in background that makes it look more realistic. Artifacts are very subtle, you might have to look closely. Codes soon to be open sourced</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Rox3RDxOx3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="footer" style="text-align: center;">Thank you</div>
 	</div>
 
 
@@ -25,6 +92,13 @@
 		<a href="https://www.fb.com/saquibiitb" target="_blank" class="fab fa-facebook"></a>
 		<a href="https://www.instagram.com/saquiboye/" target="_blank" class="fab fa-instagram"></a>
 		<a href="https://github.com/Saquib764" target="_blank" class="fab fa-github"></a>
+	</div>
+	<div class="border"></div>
+	<div class="menu">
+		<a href="/">Home</a>
+		<a href="/#about">About</a>
+		<a href="/#photography">Photography</a>
+		<a href="/labs">Labs</a>
 	</div>
 
 </body>
