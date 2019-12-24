@@ -3,131 +3,157 @@
 <html lang="en">
 <head>
 	<meta name="theme-color" content="#af0000">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Saquib Alam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<title>Labs Saquib Alam</title>
 	<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="css/knowme.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="css/labs.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
 </head>
 
 <body>
-	<div id="mobile"></div>
-	<div id="top" class="landing">
-		<div class="contain-all">
-			<div class="landing-holder">
-				<div class="info">
-					<span>Hello world! My name is</span>
-					<span class="name">Saquib Alam</span>
-					<span style="font-size: 0.8em; line-height: 1.5em">Doing Masters in Control, Systems and Robotics <br> at kth royal institute of technology, sweden</span>
-					<br>
-					<span style="font-size: 0.65em; line-height: 1.5em">(Like my Life, this page is always under construction)</span>
-				</div>
-				<!-- <div class="skill">
-					<span class="skill">Autonomous Drive | Robotics | Computer Vision</span>
-					<span class="skill">Photographer | Web Developer</span>
-				</div> -->
+	<div class="container1">
+		<h1 style="text-align: center; margin-top: 50px;">Oye Lab</h1>
+		<h3 style="text-align: center;">Autonomous System | Python | JavaScript</h3>
+		<br/>
 
-				<a class="know" href="/labs">Know more <span class="mobile-only arrow">&#9658;</span></a>
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Apr</span>
+				<span class="day">08</span>
+				<span class="year">2019</span>
 			</div>
+			<h3>Autonomous drone</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>Crazyflie</span>
+				<span>ROS</span>
+				<span>OpenCV</span>
+				<span>Machine Learning</span>
+				<span>Aruco</span>
+				<span>Perception</span>
+				<span>Localisation</span>
+				<span>Planning</span>
+			</div>
+			<p>This is a six month long course project, done in group of three. Aim is build an autnomous drone capable of planning and executing a path in known map. Path need to satisfy certain constraints. Localisation of drone is done using Aruco markers, whose position is known. Drone should be also to able to find known object and report it's position in map. SVM is used to detect and localise object in the image which is then converted to world frame usin camera geometry.</p>
+			<p>Below video demonstrate localisation capability of drone. Drone is capable of flying from any position from map, given there is an Aruco marker near-by.  The path being executed is pre-planned. More videos comming soon. </p>
+			<p><a target="_blank" href="/docs/pras2018.pdf">Download</a> Presentation</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/LxrwtH2HTXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JBJQxv_AkvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
-		<div class="social">
-			<!-- <span>Get in touch</span><br> -->
-			<a href="https://www.linkedin.com/in/saquiboye" target="_blank" class="fab fa-linkedin"></a>
-			<a href="https://www.fb.com/saquibiitb" target="_blank" class="fab fa-facebook"></a>
-			<a href="https://www.instagram.com/saquiboye/" target="_blank" class="fab fa-instagram"></a>
-			<a href="https://github.com/Saquib764" target="_blank" class="fab fa-github"></a>
-		</div>
-	</div>
-
-	<div id="about" class="container">
-		<h1 class="title" ">About me</h1>
-		<div class="row">
-			<p style="line-height: 1.4em; font-size: 1.3em; text-align: justify;"> Every successful system/innovation is a fusion of multiple technologies and creativity, rather than just one. This idea has always inspired me to quickly learn and adopt new innovative ideas, concept, and technologies. Which led me to chose a career in robotics as it is extremely diverse and interdisciplinary in nature. <br>
-			I have a strong background in programming, real-time and autonomous systems. I love solving challenging problem in these fields. Apart from this I am an enthusuastic traveller and amateur photographer.
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Apr</span>
+				<span class="day">17</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>Serverless peer to peer connection</h3>
+			<div class="tag">
+				<span>JavaScript</span>
+				<span>WebRTC</span>
+				<span>Firebase</span>
+				<span>Three.js</span>
+				<span>QRcode</span>
+			</div>
+			<p>Serverless peer to peer connection to interact with laptop using mobile motion sensor. This technology can be used to create interactive HTML games with mobile phone as controller. Connect is established via WebRTC using QR scanner. No need to install any apps. Token exchange happens via Firebase</p>
+			<p>
+				You can try it live- <br>
+				Model- <a href="https://lnkd.in/eECR__9"> https://lnkd.in/eECR__9</a><br>
+				Controller- <a href="https://lnkd.in/ei3SEPD"> https://lnkd.in/ei3SEPD</a>
 			</p>
-		</div>
-		<h1 class="title" ">Education</h1>
-		<div class="row">
-			<div class="item">
-				<div>
-					<img src="/images/kth.jpg">
-					<br>
-					<h3>2018-Present</h3>
-					<p>
-						Pursuing Masters in System, Control and Robotics at KTH Royal Institute of Technology, Sweden with specialization in Autonomous Systems.
-					</p>
-				</div>
-			</div>
+			<p>You might need to allow unsecure https connection.<br>
+				GitHub code- <a href="https://lnkd.in/erjrTyS">https://lnkd.in/erjrTyS</a>
 
-			<div class="item">
-				<div>
-					<img src="/images/iitb.jpg">
-					<br>
-					<h3>2011-2015</h3>
-					<p>
-						I completed my bachelor's from Indian Institute of Technology Bombay in 2015. My major was in Engineering Physics. Experience at IIT Bombay was life changing where I step out of my comfort zone and explorevariety of things apart from academics.
-					</p>
-				</div>
-			</div>
-			
-		</div>
-		
-		<h1 class="title" ">Experience</h1>
-		<div class="row">
-			<div class="item">
-				<div>
-					<img src="/images/plakc.jpg">
-					<br>
-					<h3>2015-2018</h3>
-					<p>
-						I worked as full-stack web-developer and then expanded to senior software engineer. My work involved use of Deep Neural Networks to detect and track target inside video for real-time ad placement.
-					</p>
-				</div>
-			</div>
-			<div class="item">
-				<div>
-					<img src="/images/adimation.jpg">
-					<br>
-					<h3>2013-2015</h3>
-					<p>
-						During my bachelor's I co-founded an Explainer video animation company, Adimation(later Brandoneer). We specialised in creating small, beautifull and efficient videos that explain other companies ideas to its user or investor. While company  is not operational now, experience was hugely positive, managing study, job, social life and other extra-curricular was thrilling, exhausting and fun. Video can be found here - <a href="https://www.youtube.com/watch?v=eU04gy24BzE">Video Link</a>
-					</p>
-				</div>
-			</div>
+			</p>
 
+			<iframe width="560" height="315" src="https://youtube.com/embed/GenRmy69HPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Apr</span>
+				<span class="day">05</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>Flying Crazyflie drone over The Internet using Smartphone's motion sensor</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>Crazyflie</span>
+				<span>ROS</span>
+				<span>JavaScript</span>
+				<span>WebRTC</span>
+			</div>
+			<p>Orientation of smartphone is continuously relayed over internet via a socket connection to the host computer. The host computer hosts a python server and ROS server. Python server receives commands from the user and commands the drone via ROS server. A video calling service is used to broadcast video feed to remote user. Here in video, my friend controls drone over Appear.in call.</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3TlEUlyPReI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Mar</span>
+				<span class="day">01</span>
+				<span class="year">2019</span>
+			</div>
+			<h3>The invisibility Cloak</h3>
+			<div class="tag">
+				<span>Python</span>
+				<span>OpenCV</span>
+				<span>Magic</span>
+			</div>
+			<p>Usual chroma key effect is easy to implement in python. In this project, however, I used subject's cloth edge and shadow to produce lense like distortion in background that makes it look more realistic. Artifacts are very subtle, you might have to look closely. Codes soon to be open sourced</p>
+			<p>Github: <a target="_blank" href="https://github.com/Saquib764/invisibility">https://github.com/Saquib764/invisibility</a></p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Rox3RDxOx3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+
+		<div class="projectItem">
+			<div class="dateBox">
+				<span class="month">Oct</span>
+				<span class="day">03</span>
+				<span class="year">2017</span>
+			</div>
+			<h3>Genetic alogorithm to find a polygon with specified constraint</h3>
+			<div class="tag">
+				<span>JavaScript</span>
+				<span>Genetic Algorithm</span>
+			</div>
+			<p>A hello-world program to get started with Genetic Algorithm. This program finds a 4 sided polygon with contraints applied on its side. You can edit the contraints to find different results that approximately satisfies all contraints. It shows best five results; best solution is displayed in Red.</p>
+
+			<p class="codepen" data-height="456" data-theme-id="0" data-default-tab="js,result" data-user="saquiboye" data-slug-hash="MEOWjy" style="height: 456px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Genetic Algorithm Example">
+				<span>See the Pen <a href="https://codepen.io/saquiboye/pen/MEOWjy/">
+				Genetic Algorithm Example</a> by Saquib Alam (<a href="https://codepen.io/saquiboye">@saquiboye</a>)
+				on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+
+		<div class="footer" style="text-align: center;">Thank you</div>
 	</div>
 
-	<div id="photography" class="container">
-		<h1 class="title" ">Photography</h1>
-		<div class="thumb">
-			<img src="/images/photography/IMG_0889.jpg">
-			<img src="/images/photography/IMG_0637.jpg">
-			<img src="/images/photography/IMG_0032.JPG">
-			<img src="/images/photography/IMG_0116.JPG">
-			<img src="/images/photography/IMG_0238.JPG">
-			<img src="/images/photography/IMG_0628.jpg">
-			<img src="/images/photography/IMG_9988.JPG">
-			<img src="/images/photography/IMG_0642.jpg">
-			<img src="/images/photography/IMG_0885.jpg">
-		</div>
-		<div class="lightbox">
-			<img id="holder" src="">
-		</div>
-	</div>
 
+	<div class="social">
+		<!-- <span>Get in touch</span><br> -->
+		<a href="https://www.linkedin.com/in/saquiboye" target="_blank" class="fab fa-linkedin"></a>
+		<a href="https://www.fb.com/saquibiitb" target="_blank" class="fab fa-facebook"></a>
+		<a href="https://www.instagram.com/saquiboye/" target="_blank" class="fab fa-instagram"></a>
+		<a href="https://github.com/Saquib764" target="_blank" class="fab fa-github"></a>
+	</div>
 	<div class="border"></div>
 	<div class="menu">
-		<span onclick="app.goto('#top')">Home</span>
-		<span onclick="app.goto('#about')">About</span>
-		<span onclick="app.goto('#photography')">Photography</span>
+		<a href="/">Home</a>
+		<a href="/#about">About</a>
+		<a href="/#photography">Photography</a>
 		<a href="/labs">Labs</a>
 	</div>
-
-	<span style="display: block; text-align: center; position: relative; top: 90px;"> Mohammad Saquib Alam </span>
 
 </body>
 
